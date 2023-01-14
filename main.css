@@ -1,6 +1,6 @@
 body{
     margin: 0;
-    background-color: #D0B8A8;
+    background-color: #263159;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -18,10 +18,11 @@ body{
     font-size: 30px;
     display: inline-block;
     padding: 0.5rem 1rem;
+    color: whitesmoke;
 }
 
 .main-header{
-    background-color: #F8EDE3;
+    background-color: #495579;
     width: auto;
 }
 
@@ -34,11 +35,11 @@ body{
     padding: 0;
     list-style: none;
     text-decoration: none;
+    color: whitesmoke;
 }
 
 .main-nav__item:hover{
-    background-color: #DFD3C3;
-
+    text-shadow: 3px 3px 3px rgba(0, 0, 0);
 }
 
 .main-nav__item{
@@ -48,10 +49,134 @@ body{
 
 /* NAVBAR END*/
 
+
+/* MIDDLE */
+
+.month{
+    text-align: center;
+    color: whitesmoke;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+}
+
+.game-container{
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.game-box{
+    border-radius: 10px;
+    min-height: 15rem;
+    font-weight: bold;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    width: 230px;
+    height: 300px;}
+
+.game-box .text-box{
+    height: 100%;
+}
+
+.text-box{
+    color: white;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column-reverse;
+    padding-left: 1rem;
+}
+
+.bot-container{
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+}
+
+.bot-left-container{
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.bot-left-container h2{
+    width: 70%;
+    border-radius: 10px;
+    border: solid black 1px;
+    text-align: center;
+    background: #495579;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.bot-left-container img{
+    border-radius: 10px;
+}
+
+.game-description{
+    color: whitesmoke;
+    text-align: center;
+    padding: 1rem;
+}
+
+.game-top-rating{
+    height: 13rem;
+    width: 12rem;
+}
+
+.bot-right-container{
+    flex-basis: 50%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 1rem;
+}
+
+.bot-right-container h2{
+    width: 70%;
+    border-radius: 10px;
+    border: solid black 1px;
+    text-align: center;
+    background: #495579;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.news-preview{
+    color: whitesmoke;
+}
+
+.news-preview li{
+    padding: 1.5rem;
+}
+
+.see-more{
+    text-decoration: none;
+    color: whitesmoke;
+    float: right;
+}
+
+.see-more :hover{
+    text-shadow: 3px 3px 3px rgba(0, 0, 0);
+    border-bottom: solid #495579 5px;
+}
+
+/* MIDDLE END */
+
+
+/* PROFILE HTML */
+
 .title-profile{
     text-align: center;
     font-size: 3rem;
-    padding-top: 5rem;    
+    padding-top: 5rem;
+    color: whitesmoke;
 }
 
 .avatar{
@@ -68,69 +193,15 @@ body{
     padding-top: 2rem;
 }
 
+.profile-bottom{
+    display: block;
+}
+
 .home-btn{
-    padding-top: 11rem;
-    width: 2rem;
+    width: 3rem;
     float: right;
-}
-
-.monthly-games{
-    margin: 2rem;
-    background-color: #F8EDE3;
-    border: solid black 2px;
-    border-radius: 10px;
-}
-
-.game-section{
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    flex-direction: row;
-}
-
-.month{
-    text-align: center;
-    padding-top: 1rem;
-}
-.game-month{
-    width: 230px;
-    height: 300px;
-    padding: 10px;
-}
-
-.bot-container{
-    display: flex;
-    justify-content: space-around;
-    margin: 1rem;
-}
-
-.bot-left-container{
-    text-align: center;
-    flex-basis: 50%;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    margin: 1rem;
-    border: black solid 2px;
-    border-radius: 10px;
-    background-color: #F8EDE3;
-}
-
-.game-top-rating{
-    height: 13rem;
-    width: 12rem;
-}
-
-.bot-right-container{
-    flex-direction: column;
-    display: flex;
-    flex-basis: 50%;
-    text-align: center;
-    margin: 1rem;
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: #F8EDE3;
+    margin-right: 0.5rem;
+    margin-top: 10rem;
 }
 
 /* START NEWS CSS */
@@ -184,6 +255,7 @@ li{
 /* START US CSS */
 
 .middle-us{
+    color: whitesmoke;
     text-align: center;
     padding: 2rem 10rem;
 }
