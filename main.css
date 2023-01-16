@@ -206,13 +206,22 @@ body{
 
 /* START NEWS CSS */
 
+.middle__news{
+    height: 70rem;
+}
+
+.input__calendar{
+    display: none;    
+}
+
 .calendar{
     border: solid black 2px;
     border-radius: 10px;
     display: inline-block;
     width: 20%;
     margin: 2rem;
-    background-color: #F8EDE3;
+    background: #495579;
+    color: whitesmoke;
 }
 
 li{
@@ -227,26 +236,58 @@ li{
 }
 
 .news{
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: #F8EDE3;
     padding: 1rem;
     margin: 1rem;
+}
+
+.news h2{
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: #495579;
+    color: whitesmoke;
+    padding: 0.5rem;
+}
+
+.news p{
+    color: whitesmoke;
 }
 
 /* END */
 
 /* START UPCOMINGS CSS */
 
+.middle__upcomings{
+    height: 65rem;
+}
+
 .month-games{
     display: inline-block;
     position: absolute;
-    padding-left: 1rem;
+    padding: 0rem 12rem;
 }
 
 .favorite-game{
     width: 40rem;
     height: 20rem;
+    margin: 2rem 1rem;
+    border-radius: 10px;
+}
+
+.month-games h1{
+    border-radius: 10px;
+    border: solid black 1px;
+    text-align: center;
+    background: #495579;
+    color: whitesmoke;
+    padding: 0.5rem
+}
+
+.game-list__items{
+    color: whitesmoke;
+    padding: 0;
+}
+
+.game-list__item{
     padding: 1rem;
 }
 
@@ -264,8 +305,248 @@ li{
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width:768px){
+@media screen and (min-width:1024px) {
+    
+    /* INDEX.HTML MEDIA */
+
+    .game-container{
+        display: flex;
+    }
+
+    /* INDEX.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .calendar ul{
+        padding: 1rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .month-games{
+        padding: 0rem 2rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA END */
+}
+
+@media screen and (max-width:768px) {
+    
+    /* INDEX.HTML MEDIA */
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav{
+        width: 100%;
+    }
+
+    .main-nav__items{
+        padding: 0;
+        text-align: center;
+    }
+
+    .game-container{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+        width: 89.5%;
+    }
+
+    .game-box{
+        height: 10rem;
+    }
+
+    /* INDEX.HTML MEDIA END */
+
+    /* PROFILE.HTML MEDIA */
+
+    .title-profile{
+        padding-top: 1rem;
+    }
+
+    .home-btn{
+        margin-top: 3rem;
+    }
+
+    /* PROFILE.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .middle__news{
+        height: 80rem;
+    }
+
+    .calendar ul{
+        padding: 2rem;
+    }
+
+    /* NEWS.HTML MEDIA END */
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .middle__upcomings{
+        height: 55rem;
+    }
+    
+    .month-games{
+        padding: 0;
+    }
+
+    .favorite-game{
+        width: 30rem;
+        height: 15rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA END */
+}
+
+@media screen and (max-width:425px){
     body{
-        background-color: aqua;
+        width: 26.5rem;
+    }
+
+    /* TOP MEDIA */
+    
+    .top{
+        width: 26.5rem;
+    }
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav{
+        width: 26.5rem;
+    }
+
+    .main-nav__items{    
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .main-nav__item{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* TOP MEDIA END */
+
+    /* MIDDLE MEDIA */
+    
+    .middle{
+        width: 26.5rem;
+    }
+
+    .game-container{
+        display: flex;
+        width: 21.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .game-box{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .bot-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .news-preview ul{
+        padding: 0;
+    }
+
+    /* MIDDLE MEDIA END */
+
+    /* PROFILE.HTML MEDIA */
+
+    .title-profile {
+        text-align: center;
+        font-size: 3rem;
+        color: whitesmoke;
+        padding-top: 1rem;
+    }
+
+    .home-btn{
+        margin-right: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* PROFILE.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .middle__news {
+        height: 100rem;
+        width: 26.5rem;
+    }
+    
+    .calendar{
+        display: none;
+    }
+
+    .input__calendar{
+        display: block;
+        margin: 0rem 8rem;
+        margin-top: 4rem;
+        border: solid black 2px;
+        border-radius: 10px;
+        background-color: #495579;
+    }
+
+    .news-container{
+        padding: 0rem 1rem;
+    }
+
+    /* NEWS.HTML MEDIA END */
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .input__calendar{
+        display: block;
+        margin-top: 2rem;
+        border: solid black 2px;
+        border-radius: 10px;
+        background-color: #495579;
+    }
+
+    .middle__upcomings{
+        height: 50rem;
+        width: 26.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .month-games{
+        padding: 4rem 0rem;
+    }
+
+    .favorite-game{
+        height: 15rem;
+        width: 25rem;
+        margin: 1rem 0rem;
+    }
+
+    /* UPCOMING.HTML MEDIA END */
+
+    /* US.HTML MEDIA */
+
+    .middle-us {
+        color: whitesmoke;
+        text-align: center;
+        padding: 2rem;
     }
 }
