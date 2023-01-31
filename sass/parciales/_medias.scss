@@ -1,0 +1,254 @@
+@media screen and (max-width:1024px) {
+    
+    /* INDEX.HTML MEDIA */
+
+    .social-media{
+        padding: 0;
+    }
+
+    .game-items{
+        justify-content: space-around;
+    }
+    /* INDEX.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .calendar ul{
+        padding: 1rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .month-games{
+        padding: 0rem 2rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA END */
+}
+
+@media screen and (max-width:768px) {
+    
+    /* INDEX.HTML MEDIA */
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav{
+        width: 100%;
+    }
+
+    .main-nav__items{
+        padding: 0;
+        text-align: center;
+    }
+
+    .game-items{
+        display: flex;
+        flex-direction: row;
+        margin: 0;
+    }
+
+    .game-item{
+        height: 10rem;
+    }
+
+    /* INDEX.HTML MEDIA END */
+
+    /* PROFILE.HTML MEDIA */
+
+    .title-profile{
+        padding-top: 1rem;
+    }
+
+    .home-btn{
+        margin-top: 3rem;
+    }
+
+    /* PROFILE.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .middle__news{
+        height: 80rem;
+    }
+
+    .calendar ul{
+        padding: 2rem;
+    }
+
+    /* NEWS.HTML MEDIA END */
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .middle__upcomings{
+        height: 55rem;
+    }
+    
+    .month-games{
+        padding: 0;
+    }
+
+    .favorite-game{
+        width: 30rem;
+        height: 15rem;
+    }
+
+    /* UPCOMINGS.HTML MEDIA END */
+}
+
+@media screen and (max-width:425px){
+    body{
+        width: 26.5rem;
+    }
+
+    /* TOP MEDIA */
+    
+    .top{
+        width: 26.5rem;
+    }
+
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav{
+        width: 26.5rem;
+    }
+
+    .main-nav__items{    
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+    }
+
+    .main-nav__item{
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* TOP MEDIA END */
+
+    /* MIDDLE MEDIA */
+    
+    .middle{
+        width: 26.5rem;
+    }
+
+    .game-items{
+        display: flex;
+        width: 21.5rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .game-item{
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .bot-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 1rem;
+    }
+
+    .news-preview ul{
+        padding: 0;
+    }
+
+    /* MIDDLE MEDIA END */
+
+    /* FOOTER */
+
+    .social-media{
+        padding: 0;
+        width: 100%;
+    }
+
+    /* PROFILE.HTML MEDIA */
+
+    .title-profile {
+        text-align: center;
+        font-size: 3rem;
+        color: whitesmoke;
+        padding-top: 1rem;
+    }
+
+    .home-btn{
+        margin-right: 0.5rem;
+        margin-top: 1.5rem;
+    }
+
+    /* PROFILE.HTML MEDIA END */
+
+    /* NEWS.HTML MEDIA */
+
+    .middle__news {
+        height: 100rem;
+        width: 26.5rem;
+    }
+    
+    .calendar{
+        display: none;
+    }
+
+    .input__calendar{
+        display: block;
+        margin: 0rem 8rem;
+        margin-top: 4rem;
+        border: solid black 2px;
+        border-radius: 10px;
+        background-color: #495579;
+    }
+
+    .news-container{
+        padding: 0rem 1rem;
+    }
+
+    /* NEWS.HTML MEDIA END */
+
+    /* UPCOMINGS.HTML MEDIA */
+
+    .input__calendar{
+        display: block;
+        margin-top: 2rem;
+        border: solid black 2px;
+        border-radius: 10px;
+        background-color: #495579;
+    }
+
+    .middle__upcomings{
+        height: 60rem;
+        width: 26.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .month-games{
+        padding: 4rem 0rem;
+    }
+
+    .favorite-game{
+        height: 15rem;
+        width: 25rem;
+        margin: 1rem 0rem;
+    }
+
+    /* UPCOMING.HTML MEDIA END */
+
+    /* US.HTML MEDIA */
+
+    .middle-us {
+        color: whitesmoke;
+        text-align: center;
+        padding: 2rem;
+    }
+}

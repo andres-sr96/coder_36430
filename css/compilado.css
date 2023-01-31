@@ -1,0 +1,403 @@
+/* INDEX.HTML */
+body {
+  margin: 0;
+  background-color: #263159;
+  font-family: 'Open Sans', sans-serif; }
+
+/* NAVBAR */
+.main-header {
+  background-color: #495579;
+  width: auto; }
+  .main-header > div {
+    display: inline-block; }
+  .main-header__brand {
+    vertical-align: middle;
+    font-size: 30px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    color: whitesmoke; }
+
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  vertical-align: middle;
+  width: calc(100% - 18rem); }
+  .main-nav__items a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: whitesmoke; }
+  .main-nav__item {
+    display: inline-block;
+    margin: 0rem 1rem; }
+    .main-nav__item:hover {
+      text-shadow: 3px 3px 3px black; }
+
+/* NAVBAR END */
+/* MIDDLE */
+.middle {
+  margin: 5rem 0rem; }
+
+.month {
+  text-align: center;
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black; }
+
+.game-items {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
+.game-item {
+  border-radius: 10px;
+  min-height: 15rem;
+  font-weight: bold;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center center;
+  width: 230px;
+  height: 300px; }
+
+.text-box {
+  color: white;
+  text-shadow: 3px 3px 3px black;
+  display: flex;
+  flex-direction: column-reverse;
+  padding-left: 1rem; }
+
+.game-item .text-box {
+  height: 100%; }
+
+.bot-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem; }
+  .bot-container-left {
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem; }
+    .bot-container-left h2 {
+      width: 70%;
+      border-radius: 10px;
+      border: solid black 1px;
+      text-align: center;
+      background: #495579;
+      color: whitesmoke;
+      padding: 0.5rem; }
+    .bot-container-left img {
+      border-radius: 10px; }
+
+.game-description {
+  color: whitesmoke;
+  text-align: center;
+  padding: 1rem; }
+
+.game-top-rating {
+  height: 13rem;
+  width: 12rem; }
+
+.bot-container-right {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  align-items: center;
+  margin: 1rem; }
+  .bot-container-right h2 {
+    width: 70%;
+    border-radius: 10px;
+    border: solid black 1px;
+    text-align: center;
+    background: #495579;
+    color: whitesmoke;
+    padding: 0.5rem; }
+
+.news-preview {
+  color: whitesmoke; }
+  .news-preview li {
+    padding: 1.5rem; }
+
+.see-more {
+  text-decoration: none;
+  color: whitesmoke;
+  float: right; }
+  .see-more:hover {
+    text-shadow: 3px 3px 3px black;
+    border-bottom: solid #495579 5px; }
+
+.footer {
+  background-color: #26272b;
+  padding: 1rem 1rem; }
+  .footer .social-media {
+    text-align: center; }
+    .footer .social-media li {
+      display: inline-block;
+      padding: 0rem 0.5rem; }
+    .footer .social-media img {
+      width: 2rem;
+      height: 2rem; }
+  .footer p {
+    color: antiquewhite;
+    text-align: center; }
+
+/* PROFILE.HTML */
+.title-profile {
+  text-align: center;
+  font-size: 3rem;
+  padding-top: 5rem;
+  color: whitesmoke; }
+
+.profile-avatar {
+  display: block;
+  position: relative;
+  margin: auto;
+  width: 15rem; }
+
+.profile-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding-top: 2rem; }
+
+.profile-bottom {
+  display: block; }
+
+.home-btn {
+  width: 3rem;
+  margin: 1rem; }
+
+/* NEWS.HTML */
+.middle__news {
+  height: 70rem; }
+  .middle__news .calendar {
+    border: solid black 2px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 20%;
+    margin: 2rem;
+    background: #495579;
+    color: whitesmoke; }
+    .middle__news .calendar li {
+      padding: 0.5rem;
+      list-style: none; }
+  .middle__news .input__calendar {
+    display: none; }
+  .middle__news .news-container {
+    position: absolute;
+    display: inline-block;
+    padding: 1rem; }
+    .middle__news .news-container .news {
+      padding: 1rem;
+      margin: 1rem; }
+      .middle__news .news-container .news h2 {
+        border: solid black 2px;
+        border-radius: 10px;
+        background-color: #495579;
+        color: whitesmoke;
+        padding: 0.5rem; }
+      .middle__news .news-container .news p {
+        color: whitesmoke; }
+
+/* UPCOMINGS.HTML */
+.middle__upcomings {
+  height: 65rem; }
+  .middle__upcomings .calendar {
+    border: solid black 2px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 20%;
+    margin: 2rem;
+    background: #495579;
+    color: whitesmoke; }
+    .middle__upcomings .calendar li {
+      padding: 0.5rem;
+      list-style: none; }
+  .middle__upcomings .input__calendar {
+    display: none; }
+
+.month-games {
+  display: inline-block;
+  position: absolute;
+  padding: 0rem 12rem; }
+  .month-games .favorite-game {
+    width: 40rem;
+    height: 20rem;
+    margin: 2rem 1rem;
+    border-radius: 10px; }
+  .month-games h1 {
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: center;
+    background: #495579;
+    color: whitesmoke;
+    padding: 0.5rem; }
+  .month-games .game-list__items {
+    color: whitesmoke;
+    padding: 0; }
+  .month-games .game-list__item {
+    padding: 1rem; }
+
+/* US.HTML */
+.middle-us {
+  height: 35rem;
+  color: whitesmoke;
+  text-align: center;
+  padding: 2rem 10rem; }
+
+@media screen and (max-width: 1024px) {
+  /* INDEX.HTML MEDIA */
+  .social-media {
+    padding: 0; }
+  .game-items {
+    justify-content: space-around; }
+  /* INDEX.HTML MEDIA END */
+  /* NEWS.HTML MEDIA */
+  .calendar ul {
+    padding: 1rem; }
+  /* UPCOMINGS.HTML MEDIA */
+  .month-games {
+    padding: 0rem 2rem; }
+  /* UPCOMINGS.HTML MEDIA END */ }
+
+@media screen and (max-width: 768px) {
+  /* INDEX.HTML MEDIA */
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-nav {
+    width: 100%; }
+  .main-nav__items {
+    padding: 0;
+    text-align: center; }
+  .game-items {
+    display: flex;
+    flex-direction: row;
+    margin: 0; }
+  .game-item {
+    height: 10rem; }
+  /* INDEX.HTML MEDIA END */
+  /* PROFILE.HTML MEDIA */
+  .title-profile {
+    padding-top: 1rem; }
+  .home-btn {
+    margin-top: 3rem; }
+  /* PROFILE.HTML MEDIA END */
+  /* NEWS.HTML MEDIA */
+  .middle__news {
+    height: 80rem; }
+  .calendar ul {
+    padding: 2rem; }
+  /* NEWS.HTML MEDIA END */
+  /* UPCOMINGS.HTML MEDIA */
+  .middle__upcomings {
+    height: 55rem; }
+  .month-games {
+    padding: 0; }
+  .favorite-game {
+    width: 30rem;
+    height: 15rem; }
+  /* UPCOMINGS.HTML MEDIA END */ }
+
+@media screen and (max-width: 425px) {
+  body {
+    width: 26.5rem; }
+  /* TOP MEDIA */
+  .top {
+    width: 26.5rem; }
+  .main-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .main-nav {
+    width: 26.5rem; }
+  .main-nav__items {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0; }
+  .main-nav__item {
+    margin: 0;
+    width: 100%;
+    text-align: center; }
+  /* TOP MEDIA END */
+  /* MIDDLE MEDIA */
+  .middle {
+    width: 26.5rem; }
+  .game-items {
+    display: flex;
+    width: 21.5rem;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  .game-item {
+    width: 10rem;
+    height: 10rem; }
+  .bot-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1rem; }
+  .news-preview ul {
+    padding: 0; }
+  /* MIDDLE MEDIA END */
+  /* FOOTER */
+  .social-media {
+    padding: 0;
+    width: 100%; }
+  /* PROFILE.HTML MEDIA */
+  .title-profile {
+    text-align: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    padding-top: 1rem; }
+  .home-btn {
+    margin-right: 0.5rem;
+    margin-top: 1.5rem; }
+  /* PROFILE.HTML MEDIA END */
+  /* NEWS.HTML MEDIA */
+  .middle__news {
+    height: 100rem;
+    width: 26.5rem; }
+  .calendar {
+    display: none; }
+  .input__calendar {
+    display: block;
+    margin: 0rem 8rem;
+    margin-top: 4rem;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: #495579; }
+  .news-container {
+    padding: 0rem 1rem; }
+  /* NEWS.HTML MEDIA END */
+  /* UPCOMINGS.HTML MEDIA */
+  .input__calendar {
+    display: block;
+    margin-top: 2rem;
+    border: solid black 2px;
+    border-radius: 10px;
+    background-color: #495579; }
+  .middle__upcomings {
+    height: 60rem;
+    width: 26.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .month-games {
+    padding: 4rem 0rem; }
+  .favorite-game {
+    height: 15rem;
+    width: 25rem;
+    margin: 1rem 0rem; }
+  /* UPCOMING.HTML MEDIA END */
+  /* US.HTML MEDIA */
+  .middle-us {
+    color: whitesmoke;
+    text-align: center;
+    padding: 2rem; } }

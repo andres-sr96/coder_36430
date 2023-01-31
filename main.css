@@ -6,11 +6,9 @@ body{
 
 /* NAVBAR */
 
-.main-nav{
-    display: inline-block;
-    text-align: right;
-    vertical-align: middle;
-    width: calc(100% - 18rem);
+.main-header{
+    background-color: #495579;
+    width: auto;
 }
 
 .main-header__brand{
@@ -21,13 +19,15 @@ body{
     color: whitesmoke;
 }
 
-.main-header{
-    background-color: #495579;
-    width: auto;
-}
-
 .main-header > div {
     display: inline-block;
+}
+
+.main-nav{
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    width: calc(100% - 18rem);
 }
 
 .main-nav__items a{
@@ -52,13 +52,17 @@ body{
 
 /* MIDDLE */
 
+.middle{
+    margin: 5rem 0rem;
+}
+
 .month{
     text-align: center;
     color: whitesmoke;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 1);
 }
 
-.game-container{
+.game-items{
     width: 90%;
     max-width: 1200px;
     margin: auto;
@@ -68,7 +72,7 @@ body{
     grid-template-columns: repeat(4, 1fr);
 }
 
-.game-box{
+.game-item{
     border-radius: 10px;
     min-height: 15rem;
     font-weight: bold;
@@ -79,7 +83,7 @@ body{
     width: 230px;
     height: 300px;}
 
-.game-box .text-box{
+.game-item .text-box{
     height: 100%;
 }
 
@@ -97,7 +101,7 @@ body{
     margin: 1rem;
 }
 
-.bot-left-container{
+.bot-container-left{
     flex-basis: 50%;
     flex-direction: column;
     display: flex;
@@ -105,7 +109,7 @@ body{
     margin: 1rem;
 }
 
-.bot-left-container h2{
+.bot-container-left h2{
     width: 70%;
     border-radius: 10px;
     border: solid black 1px;
@@ -115,7 +119,7 @@ body{
     padding: 0.5rem;
 }
 
-.bot-left-container img{
+.bot-container-left img{
     border-radius: 10px;
 }
 
@@ -130,7 +134,7 @@ body{
     width: 12rem;
 }
 
-.bot-right-container{
+.bot-container-right{
     flex-basis: 50%;
     flex-direction: column;
     display: flex;
@@ -138,7 +142,7 @@ body{
     margin: 1rem;
 }
 
-.bot-right-container h2{
+.bot-container-right h2{
     width: 70%;
     border-radius: 10px;
     border: solid black 1px;
@@ -167,6 +171,28 @@ body{
     border-bottom: solid #495579 5px;
 }
 
+.footer{
+    background-color: #26272b;
+    padding: 1rem 1rem;
+}
+
+.social-media{
+    text-align: center;
+}
+
+.social-media li{
+    display: inline-block;
+}
+
+.social-media img{
+    width: 2rem;
+    height: 2rem;
+}
+
+.footer p{
+    color: antiquewhite;
+    text-align: center;
+}
 /* MIDDLE END */
 
 
@@ -179,7 +205,7 @@ body{
     color: whitesmoke;
 }
 
-.avatar{
+.profile-avatar{
     display: block;
     position: relative;
     margin: auto;
@@ -199,9 +225,7 @@ body{
 
 .home-btn{
     width: 3rem;
-    float: right;
-    margin-right: 0.5rem;
-    margin-top: 10rem;
+    margin: 1rem;
 }
 
 /* START NEWS CSS */
@@ -309,10 +333,13 @@ li{
     
     /* INDEX.HTML MEDIA */
 
-    .game-container{
-        display: flex;
+    .social-media{
+        padding: 0;
     }
 
+    .game-items{
+        justify-content: space-around;
+    }
     /* INDEX.HTML MEDIA END */
 
     /* NEWS.HTML MEDIA */
@@ -349,14 +376,13 @@ li{
         text-align: center;
     }
 
-    .game-container{
+    .game-items{
         display: flex;
         flex-direction: row;
         margin: 0;
-        width: 89.5%;
     }
 
-    .game-box{
+    .game-item{
         height: 10rem;
     }
 
@@ -445,14 +471,14 @@ li{
         width: 26.5rem;
     }
 
-    .game-container{
+    .game-items{
         display: flex;
         width: 21.5rem;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .game-box{
+    .game-item{
         width: 10rem;
         height: 10rem;
     }
@@ -469,6 +495,13 @@ li{
     }
 
     /* MIDDLE MEDIA END */
+
+    /* FOOTER */
+
+    .social-media{
+        padding: 0;
+        width: 100%;
+    }
 
     /* PROFILE.HTML MEDIA */
 
@@ -523,7 +556,7 @@ li{
     }
 
     .middle__upcomings{
-        height: 50rem;
+        height: 60rem;
         width: 26.5rem;
         display: flex;
         flex-direction: column;
