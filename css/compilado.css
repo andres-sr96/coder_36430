@@ -197,11 +197,15 @@ body {
       padding: 1rem;
       margin: 1rem; }
       .middle__news .news-container .news h2 {
-        border: solid black 2px;
+        width: 60rem;
+        height: 15rem;
         border-radius: 10px;
-        background-color: #525E75;
         color: whitesmoke;
-        padding: 0.5rem; }
+        padding: 1rem;
+        background-position: center center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column-reverse; }
       .middle__news .news-container .news p {
         color: whitesmoke; }
 
