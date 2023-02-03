@@ -205,7 +205,8 @@ body {
         background-position: center center;
         background-size: cover;
         display: flex;
-        flex-direction: column-reverse; }
+        flex-direction: column-reverse;
+        text-shadow: 3px 3px 3px black; }
       .middle__news .news-container .news p {
         color: whitesmoke; }
 
