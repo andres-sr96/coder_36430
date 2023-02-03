@@ -1,0 +1,50 @@
+/* UPCOMINGS.HTML */
+.middle__upcomings{
+    height: 65rem;
+    .calendar{
+        border: solid black 2px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 20%;
+        margin: 2rem;
+        background: #525E75;
+        color: whitesmoke;
+        li{
+            padding: 0.5rem;
+            list-style: none;
+        }
+    }
+    .input__calendar{
+        display: none;
+    }
+}
+
+.month-games{
+    display: inline-block;
+    position: absolute;
+    padding: 0rem 12rem;
+    .favorite-game{
+        width: 40rem;
+        height: 20rem;
+        margin: 2rem 1rem;
+        border-radius: 10px;
+    }
+    h1{
+        border: solid black 1px;
+        border-radius: 10px;
+        text-align: center;
+        background: #525E75;
+        color: whitesmoke;
+        padding: 0.5rem;
+    }
+    .game-list{
+        &__items{
+            color: whitesmoke;
+            padding: 0;
+
+        }
+        &__item{
+            padding: 1rem;
+        }
+    }
+}

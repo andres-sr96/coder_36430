@@ -1,0 +1,44 @@
+/* NEWS.HTML */
+.middle__news{
+    height: 70rem;
+    .calendar{
+        border: solid black 2px;
+        border-radius: 10px;
+        display: inline-block;
+        width: 20%;
+        margin: 2rem;
+        background: #525E75;
+        color: whitesmoke;
+        li{
+            padding: 0.5rem;
+            list-style: none;
+        }
+    }
+    .input__calendar{
+        display: none;
+    }
+    .news-container{
+        position: absolute;
+        display: inline-block;
+        padding: 1rem;
+        .news{
+            padding: 1rem;
+            margin: 1rem;
+            h2{
+                width: 60rem;
+                height: 15rem;
+                border-radius: 10px;
+                color: whitesmoke;
+                padding: 1rem;
+                background-position: center center;
+                background-size: cover;
+                display: flex;
+                flex-direction: column-reverse;
+            }
+            p{
+                color: whitesmoke;
+            }
+        }
+    }
+}
+
