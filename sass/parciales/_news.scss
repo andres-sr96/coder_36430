@@ -1,10 +1,9 @@
 /* NEWS.HTML */
 .middle__news{
-    height: 140rem;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    align-items: flex-start;
     .calendar{
         border: solid black 2px;
         border-radius: 10px;
@@ -37,7 +36,7 @@
                 border-radius: 10px;
                 color: whitesmoke;
                 padding: 1rem;
-                background-position: center center;
+                background-position: center;
                 background-size: cover;
                 display: flex;
                 flex-direction: column-reverse;
@@ -51,6 +50,55 @@
     }
     .review{
         width: 30%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        h2{
+            text-align: center;
+            width: 100%;
+            color: whitesmoke;
+            text-shadow: 3px 3px 3px black;
+        }
+        &-box{
+            margin: 2rem;
+            display: flex;
+            border-radius: 10px;
+            background-position: center;
+            background-size: cover;
+            color: whitesmoke;
+            text-shadow: 3px 3px 3px black;
+            &-user{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                margin: 1rem;
+                padding: 0.5rem;
+                border-radius: 10px;
+                backdrop-filter: brightness(0.5);
+                .user_photo{
+                    border-radius: 50%;
+                    background-position: center;
+                    background-size: cover;
+                    height: 7rem;
+                    width: 7rem;
+                }
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+            &-preview{
+                display: flex;
+                margin: 1rem;
+                padding: 0.5rem;
+                flex-flow: column;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                border-radius: 10px;
+                backdrop-filter: brightness(0.5);
+            }
+        }
     }
 }
 
