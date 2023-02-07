@@ -153,7 +153,8 @@ body {
   text-align: center;
   font-size: 3rem;
   padding-top: 5rem;
-  color: whitesmoke; }
+  color: whitesmoke;
+  text-shadow: 3px 3px 3px black; }
 
 .profile-avatar {
   display: block;
@@ -167,7 +168,7 @@ body {
   align-items: center;
   padding-top: 2rem; }
 
-.profile-bottom {
+.profile-button {
   display: block; }
 
 .home-btn {
