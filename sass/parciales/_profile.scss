@@ -1,14 +1,23 @@
 /* PROFILE.HTML */
 
-.title-profile{
-    text-align: center;
-    font-size: 3rem;
-    padding-top: 5rem;
-    color: whitesmoke;
-    text-shadow: 3px 3px 3px black;
+.top{
+    padding-bottom: 100px;
+    .title-profile{
+        text-align: center;
+        font-size: 3rem;
+        padding-top: 5rem;
+        color: whitesmoke;
+        margin: 0;
+        text-shadow: 3px 3px 3px black;
+    }
+    &-buttom{
+        display: inline-block;
+        position: relative;
+    }
 }
 
 .profile{
+    padding-bottom: 100px;
     &-avatar{
         display: block;
         position: relative;
@@ -20,9 +29,6 @@
         flex-flow: column;
         align-items: center;
         padding-top: 2rem;
-    }
-    &-button{
-        display: block;
     }
 }
 

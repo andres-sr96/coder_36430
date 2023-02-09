@@ -2,7 +2,8 @@
 body {
   background-image: linear-gradient(to top, #09203f 0%, #537895 100%);
   margin: 0;
-  font-family: 'Open Sans', sans-serif; }
+  font-family: 'Open Sans', sans-serif;
+  height: 100%; }
 
 /* NAVBAR */
 .main-header {
@@ -149,27 +150,31 @@ body {
     text-align: center; }
 
 /* PROFILE.HTML */
-.title-profile {
-  text-align: center;
-  font-size: 3rem;
-  padding-top: 5rem;
-  color: whitesmoke;
-  text-shadow: 3px 3px 3px black; }
+.top {
+  padding-bottom: 100px; }
+  .top .title-profile {
+    text-align: center;
+    font-size: 3rem;
+    padding-top: 5rem;
+    color: whitesmoke;
+    margin: 0;
+    text-shadow: 3px 3px 3px black; }
+  .top-buttom {
+    display: inline-block;
+    position: relative; }
 
-.profile-avatar {
-  display: block;
-  position: relative;
-  margin: auto;
-  width: 15rem; }
-
-.profile-form {
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  padding-top: 2rem; }
-
-.profile-button {
-  display: block; }
+.profile {
+  padding-bottom: 100px; }
+  .profile-avatar {
+    display: block;
+    position: relative;
+    margin: auto;
+    width: 15rem; }
+  .profile-form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    padding-top: 2rem; }
 
 .home-btn {
   width: 3rem;
