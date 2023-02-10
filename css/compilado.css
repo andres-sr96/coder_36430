@@ -150,18 +150,18 @@ body {
     text-align: center; }
 
 /* PROFILE.HTML */
-.top {
+.top-profile {
   padding-bottom: 100px; }
-  .top .title-profile {
+  .top-profile-buttom {
+    display: inline-block;
+    position: relative; }
+  .top-profile .title-profile {
     text-align: center;
     font-size: 3rem;
     padding-top: 5rem;
     color: whitesmoke;
     margin: 0;
     text-shadow: 3px 3px 3px black; }
-  .top-buttom {
-    display: inline-block;
-    position: relative; }
 
 .profile {
   padding-bottom: 100px; }
@@ -271,13 +271,17 @@ body {
 
 /* UPCOMINGS.HTML */
 .middle__upcomings {
-  height: 65rem; }
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: baseline; }
   .middle__upcomings .calendar {
     border: solid black 2px;
     border-radius: 10px;
     display: inline-block;
     width: 20%;
     margin: 2rem;
+    height: fit-content;
     background: #525E75;
     color: whitesmoke; }
     .middle__upcomings .calendar li {
@@ -288,29 +292,55 @@ body {
 
 .month-games {
   display: inline-block;
-  position: absolute;
-  padding: 0rem 12rem; }
-  .month-games .favorite-game {
-    width: 40rem;
-    height: 20rem;
-    margin: 2rem 1rem;
-    border-radius: 10px; }
+  width: 80%;
+  padding: 0rem 1rem; }
   .month-games h1 {
     border: solid black 1px;
     border-radius: 10px;
     text-align: center;
     background: #525E75;
     color: whitesmoke;
-    padding: 0.5rem; }
+    padding: 0.5rem;
+    width: 50%;
+    position: relative;
+    left: 25%; }
   .month-games .game-list {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-around;
+    height: 100rem; }
     .month-games .game-list__items {
       color: whitesmoke;
-      padding: 0;
-      list-style-type: none; }
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-content: space-around;
+      flex-wrap: wrap; }
+      .month-games .game-list__items :hover .game-list__item__text {
+        display: none;
+        transition: 3s; }
+      .month-games .game-list__items :hover .game-list__item__text__hover {
+        transition: 3s;
+        text-shadow: 3px 3px 3px black;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-left: 1rem;
+        height: 100%;
+        justify-content: space-between; }
     .month-games .game-list__item {
-      padding: 1rem; }
+      height: 15%;
+      width: 40%;
+      border-radius: 10px;
+      background-position: center;
+      background-size: cover; }
+    .month-games .game-list__item__text {
+      text-shadow: 3px 3px 3px black;
+      display: flex;
+      flex-direction: column-reverse;
+      padding-left: 1rem;
+      height: 100%;
+      justify-content: space-between; }
+    .month-games .game-list__item__text__hover {
+      display: none; }
 
 /* US.HTML */
 .middle-us {
