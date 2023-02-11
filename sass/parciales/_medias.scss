@@ -42,6 +42,23 @@
         padding: 0rem 2rem;
     }
 
+    #game-list__items{
+        width: 100%;
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 30px;
+    }
+
+    #game-list__item{
+        height: 15%;
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
+    }
+
     /* UPCOMINGS.HTML MEDIA END */
 }
 
