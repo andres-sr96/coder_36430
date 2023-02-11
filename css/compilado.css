@@ -540,24 +540,32 @@ body {
     display: none; }
   /* NEWS.HTML MEDIA END */
   /* UPCOMINGS.HTML MEDIA */
-  .input__calendar {
-    display: block;
-    margin-top: 2rem;
-    border: solid black 2px;
-    border-radius: 10px;
-    background-color: #495579; }
+  #calendar {
+    display: none; }
   .middle__upcomings {
-    height: 60rem;
-    width: 26.5rem;
+    height: auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center; }
-  .month-games {
-    padding: 4rem 0rem; }
-  .favorite-game {
-    height: 15rem;
-    width: 25rem;
-    margin: 1rem 0rem; }
+  .month-games h1 {
+    margin: 1rem;
+    width: 70%;
+    padding: 0.5rem;
+    position: relative;
+    left: 10%; }
+  #game-list__items {
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }
+  #game-list__item {
+    height: auto;
+    width: auto; }
+  #game-list__item__text {
+    padding: 0rem 1rem; }
+  .game-list__item__text__hover {
+    width: 95%; }
   /* UPCOMING.HTML MEDIA END */
   /* US.HTML MEDIA */
   .middle-us {
