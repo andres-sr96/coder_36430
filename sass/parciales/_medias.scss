@@ -55,6 +55,10 @@
         height: 10rem;
     }
 
+    #review{
+        display: none;
+    }
+
     /* INDEX.HTML MEDIA END */
 
     /* PROFILE.HTML MEDIA */
@@ -71,8 +75,17 @@
 
     /* NEWS.HTML MEDIA */
 
-    .middle__news{
-        height: 80rem;
+    .calendar{
+        display: none;
+    }
+
+    #news-container{
+        width: 90%;
+    }
+    #news{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;    
     }
 
     .calendar ul{
