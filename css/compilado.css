@@ -17,6 +17,9 @@ body {
     display: inline-block;
     padding: 0.5rem 1rem;
     color: whitesmoke; }
+  .main-header__brand__home {
+    text-decoration: none;
+    color: whitesmoke; }
 
 .main-nav {
   display: inline-block;
@@ -374,7 +377,8 @@ body {
   .social-media {
     padding: 0; }
   .game-items {
-    justify-content: space-around; }
+    justify-content: space-around;
+    width: auto; }
   /* INDEX.HTML MEDIA END */
   /* NEWS.HTML MEDIA */
   .calendar ul {
@@ -424,7 +428,8 @@ body {
   .game-items {
     display: flex;
     flex-direction: row;
-    margin: 0; }
+    margin: 0;
+    width: auto; }
   .game-item {
     height: 10rem; }
   #review {
@@ -468,7 +473,12 @@ body {
     border-radius: 10px;
     background-position: center;
     background-size: cover; }
-  /* UPCOMINGS.HTML MEDIA END */ }
+  /* UPCOMINGS.HTML MEDIA END */
+  #person {
+    border-radius: 10px;
+    width: 20rem;
+    height: 20rem;
+    background-size: cover; } }
 
 @media screen and (max-width: 425px) {
   body {
@@ -496,7 +506,7 @@ body {
     width: 26.5rem; }
   .game-items {
     display: flex;
-    width: 21.5rem;
+    width: auto;
     flex-direction: row;
     flex-wrap: wrap; }
   .game-item {
@@ -573,17 +583,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; }
+  .month-games {
+    width: auto; }
   .month-games h1 {
     margin: 1rem;
     width: 70%;
     padding: 0.5rem;
     position: relative;
-    left: 10%; }
+    left: 7%; }
   #game-list__items {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    flex-wrap: nowrap; }
+    flex-wrap: nowrap;
+    justify-content: space-evenly; }
   #game-list__item {
     height: auto;
     width: auto; }
@@ -593,7 +606,25 @@ body {
     width: 95%; }
   /* UPCOMING.HTML MEDIA END */
   /* US.HTML MEDIA */
-  .middle-us {
+  .us_mid {
     color: whitesmoke;
     text-align: center;
-    padding: 2rem; } }
+    padding: 2rem;
+    display: flex;
+    width: auto; }
+  .us_mid_box {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    align-items: center;
+    color: whitesmoke; }
+  #person {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    background-size: cover; }
+  .us_mid_box_text {
+    display: inline-block;
+    width: 90%;
+    text-align: center; } }
