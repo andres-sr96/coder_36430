@@ -7,7 +7,6 @@
     .calendar{
         border: solid black 2px;
         border-radius: 10px;
-        display: inline-block;
         width: 20%;
         margin: 2rem;
         height: fit-content;
@@ -18,7 +17,7 @@
             list-style: none;
         }
     }
-    .input__calendar{
+    #input__calendar{
         display: none;
     }
     .news-container{

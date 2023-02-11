@@ -189,7 +189,6 @@ body {
   .middle__news .calendar {
     border: solid black 2px;
     border-radius: 10px;
-    display: inline-block;
     width: 20%;
     margin: 2rem;
     height: fit-content;
@@ -198,7 +197,7 @@ body {
     .middle__news .calendar li {
       padding: 0.5rem;
       list-style: none; }
-  .middle__news .input__calendar {
+  .middle__news #input__calendar {
     display: none; }
   .middle__news .news-container {
     display: flex;
@@ -480,20 +479,44 @@ body {
     margin-top: 1.5rem; }
   /* PROFILE.HTML MEDIA END */
   /* NEWS.HTML MEDIA */
-  .middle__news {
-    height: 100rem;
-    width: 26.5rem; }
+  #middle__news {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%; }
   .calendar {
     display: none; }
-  .input__calendar {
+  #input__calendar {
     display: block;
-    margin: 0rem 8rem;
-    margin-top: 4rem;
+    margin: 2rem 8rem;
     border: solid black 2px;
     border-radius: 10px;
+    width: 50%;
+    height: 2%;
     background-color: #495579; }
-  .news-container {
-    padding: 0rem 1rem; }
+  #news-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column; }
+  #news {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem;
+    width: 90%; }
+  #news h2 {
+    width: auto;
+    height: 15rem;
+    border-radius: 10px;
+    color: whitesmoke;
+    padding: 1rem;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column-reverse;
+    font-size: 2rem;
+    text-shadow: 3px 3px 3px black; }
+  #review {
+    display: none; }
   /* NEWS.HTML MEDIA END */
   /* UPCOMINGS.HTML MEDIA */
   .input__calendar {
