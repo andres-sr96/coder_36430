@@ -115,17 +115,33 @@
 
     /* UPCOMINGS.HTML MEDIA */
 
+    #calendar{
+        display: none;
+    }
+
     .middle__upcomings{
-        height: 55rem;
+        height: auto;
     }
     
     .month-games{
-        padding: 0;
+        width: 100%;
     }
 
-    .favorite-game{
-        width: 30rem;
-        height: 15rem;
+    #game-list__items{
+        color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 30px;   
+    }
+
+    #game-list__item{
+        width: 100%;
+        border-radius: 10px;
+        background-position: center;
+        background-size: cover;
     }
 
     /* UPCOMINGS.HTML MEDIA END */
